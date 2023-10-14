@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="mx-auto h-screen flex flex-col">
+    <div className="h-screen flex flex-col">
       <Header />
       {children}
       <Footer />

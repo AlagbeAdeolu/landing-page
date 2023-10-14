@@ -7,9 +7,9 @@ const Footer = () => {
     <div className="h-[400px] w-full bg-gray-900 text-white py-10 mt-auto">
       <div  className="container mx-auto">
         <div className="flex flex-col gap-6 py-6 border-b border-gray-500">
-          <div className="flex justify-between items-end">
+          <div className="flex flex-col md:flex-row justify-between md:items-end">
             {/* Logo */}
-            <div className="font-bold text-5xl tracking-wide">
+            <div className="font-bold pb-4 md:pb-0 text-5xl tracking-wide">
               <h1>
                 Furni<span className="text-green-400">.</span>
               </h1>
@@ -32,8 +32,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between items-start">
-            <div className="flex gap-2">
+          <div className="flex flex-col md:flex-row justify-between items-start">
+            <div className="flex gap-2 mb-4 md:pb-0">
               <div className="cursor-pointer bg-gray-50 transition ease-in delay-100 text-green-500 rounded-full h-[40px] w-[40px] flex items-center justify-center p-[1.5rem] hover:text-gray-50 hover:bg-green-500  ">
                 <Twitter />
               </div>
@@ -47,7 +47,7 @@ const Footer = () => {
                 <Telegram />
               </div>
             </div>
-            <div className="w-1/2 text-right text-lg font-thin">
+            <div className="md:w-1/2 md:text-right text-lg font-thin">
               <p>
                 "<span className="text-green-500">Quality</span> is never an
                 accident. It is always the result of intelligent effort." - John
