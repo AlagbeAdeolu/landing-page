@@ -42,10 +42,10 @@ const Home = () => {
         <div className="w-full flex flex-col justify-center items-center">
           <div className="">
             <div className="flex justify-around gap-4 mt-12 mx-auto  ">
-              <img src="/assets/hero1.jpg" className="h-[400px] " alt="" />
-              <img src="/assets/hero2.jpg" className="h-[400px] " alt="" />
-              <img src="/assets/hero3.jpg" className="h-[400px] " alt="" />
-              <img src="/assets/hero4.jpg" className="h-[400px] " alt="" />
+              <img src="/assets/hero1.jpg" className="h-[200px] lg:h-[400px] " alt="" />
+              <img src="/assets/hero2.jpg" className="h-[200px] lg:h-[400px] " alt="" />
+              <img src="/assets/hero3.jpg" className="h-[200px] lg:h-[400px] " alt="" />
+              <img src="/assets/hero4.jpg" className="h-[200px] lg:h-[400px] " alt="" />
             </div>
           </div>
           <div className="mt-4">

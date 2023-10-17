@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="h-[400px] w-full bg-gray-900 text-white py-10 mt-auto">
+    <div className="h-[400px] w-full bg-gray-900 text-white py-10 px-2 mt-auto">
       <div  className="container mx-auto">
         <div className="flex flex-col gap-6 py-6 border-b border-gray-500">
           <div className="flex flex-col md:flex-row justify-between md:items-end">
@@ -17,16 +17,16 @@ const Footer = () => {
             {/* Links */}
             <div className="">
               <div className="uppercase flex gap-4 text-gray-400 underline-offset-8">
-                <Link className="hover:underline hover:text-green-500">
+                <Link to='/About' className="hover:underline hover:text-green-500">
                   About us
                 </Link>
-                <Link className="hover:underline hover:text-green-500">
+                <Link to={'/services'} className="hover:underline hover:text-green-500">
                   Services
                 </Link>
-                <Link className="hover:underline hover:text-green-500">
-                  Blog
+                <Link to={'/shop'} className="hover:underline hover:text-green-500">
+                  Shop
                 </Link>
-                <Link className="hover:underline hover:text-green-500">
+                <Link to={'/contact'} className="hover:underline hover:text-green-500">
                   Contact us
                 </Link>
               </div>

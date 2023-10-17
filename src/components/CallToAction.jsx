@@ -18,7 +18,7 @@ const CallToAction = () => {
     const currentTime = videoRef.current.currentTime;
     if (videoDuration !== null && currentTime !== null) {
       let loadingTimeout = setTimeout(() => {
-        if (videoProgress == currentTime / videoDuration) {
+        if (videoProgress === currentTime / videoDuration) {
           setVideoProgress((prev) => prev + 0.0000001);
         } else {
           setVideoProgress(currentTime / videoDuration);
@@ -45,7 +45,7 @@ const CallToAction = () => {
         <h2 className="uppercase text-sm font-bold">The kovac family story</h2>
       </div>
       <div className="text-gray-500 text-xl flex justify-between mb-10">
-        <div className="w-1/2 border-b-2 border-t-2 py-8">
+        <div className="lg:w-2/3 border-b-2 border-t-2 py-8">
           <p className="">
             Camilla and Christopher Kovac is the force behind Sweden based
             furniture company,{" "}
@@ -54,17 +54,21 @@ const CallToAction = () => {
             friendly as possible.
           </p>
         </div>
-        <div className="text-sm rotate-90">
+        <div className="text-sm lg:rotate-90">
           <p>May,2020 -------- 2023</p>
         </div>
       </div>
 
-      <div>
-        <p className="w-1/3 text-4xl text-gray-600 mb-6">
-          The products are made in Stockholm, Sweden
+      <div className="">
+        <p className="w-1/2 text-5xl leading-relaxed text-gray-600 mb-6">
+          The{" "}
+          <span className="border-b-2 border-green-500 text-green-500">
+            products are made
+          </span>{" "}
+          in Stockholm, Sweden
         </p>
-        <div className="grid grid-cols-3 text-lg text-gray-400">
-          <div className="flex flex-col justify-between">
+        <div className="grid place-items-center grid-cols-3 gap-10 text-justify text-lg text-gray-400">
+          <div className="flex flex-col gap-4 ">
             <p>
               The ambition is to make products with as small impact on the
               environment as possible, source materal and produce them locally.
@@ -77,6 +81,13 @@ const CallToAction = () => {
               furniture is built to last.
             </p>
           </div>
+          <div className="w-full  ">
+            <img
+              className="h-[500px] rounded-[200px] w-full object-cover"
+              src="/assets/hero9.jpg"
+              alt=""
+            />
+          </div>
 
           <div>
             <p>
@@ -87,18 +98,10 @@ const CallToAction = () => {
               business operations.
             </p>
           </div>
-
-          <div className="w-full bg-center ">
-            <img
-              className="h-[500px] w-full object-cover "
-              src="/assets/hero9.jpg"
-              alt=""
-            />
-          </div>
         </div>
       </div>
       {/* video */}
-      <div>
+      <div className="text-center mt-20">
         <div className="relative w-[90%] max-w-6xl mx-auto my-8 rounded-xl overflow-hidden">
           <div className="absolute top-4 right-4 z-10">
             <VideoPlayerControls
@@ -110,6 +113,13 @@ const CallToAction = () => {
           <video className="w-full" ref={videoRef} autoPlay loop muted>
             <source src="/assets/cta-video.mp4" />
           </video>
+        </div>
+        <div>
+          <h2 className="text-2xl">Poetic Brightness</h2>
+          <p className="text-gray-400">
+            Shop with us and let us plant a tree in the Amazon rainforest and a
+            way to improve our lives and the environment.
+          </p>
         </div>
       </div>
     </div>
