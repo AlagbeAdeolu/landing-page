@@ -1,20 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Card = ({ name, role, stack }) => {
+const Card = ({ title, price, stack, image }) => {
   return (
     <div>
-      <div className=" border rounded-xl py-2 px-4 flex flex-col items-center justify-center">
-        <div className="">
+      <div className="py-10 border rounded-xl px-4 flex flex-col items-center justify-center">
+        <div className='overflow-hidden'>
           <img
-            className="object-cover rounded-full h-[100px] w-[100px]"
-            src="/assets/hero8.jpg"
-            alt=""
+            className={`transform transition-transform scale-100 hover:scale-110 hover:amimate-zoom-out duration-300 object-cover  h-[250px] w-[200px]`}
+            src={image}
+            alt={title}
           />
         </div>
         <div className="text-center mt-4 ">
-          <h1 className="text-lg font-semibold">Wade Wilson</h1>
-          <h2 className="text-sm">CEO, Furni Industries</h2>
-          <h2 className="text-xs font-dancingScript">Frontend Developer</h2>
+          <h1 className="text-sm font-semibold capitalize">{title}</h1>
+          <h2 className="text-base">${price}</h2>
         </div>
       </div>
     </div>

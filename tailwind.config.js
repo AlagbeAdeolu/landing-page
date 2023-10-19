@@ -5,6 +5,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        zoomOut: {
+          'from': {
+            transform: 'scale(1.1)',
+          },
+          'to': {
+            transform: 'scale(1)',
+          },
+        },
+      },
+      animation: {
+        'zoom-out': 'zoomOut 1s ',
+      },
+
       fontFamily: {
         sans: ['Cormorant', 'sans'],
         Mooli: ['Mooli', 'sans'],
