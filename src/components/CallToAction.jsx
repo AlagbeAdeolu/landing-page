@@ -40,11 +40,11 @@ const CallToAction = () => {
   };
 
   return (
-    <div className="mb-10">
+    <div className="mb-10 mx-6">
       <div className="py-10">
         <h2 className="uppercase text-sm font-bold">The kovac family story</h2>
       </div>
-      <div className="text-gray-500 text-xl flex justify-between mb-10">
+      <div className="text-gray-500 text-xl lg:flex justify-between mb-10">
         <div className="lg:w-2/3 border-b-2 border-t-2 py-8">
           <p className="">
             Camilla and Christopher Kovac is the force behind Sweden based
@@ -54,21 +54,21 @@ const CallToAction = () => {
             friendly as possible.
           </p>
         </div>
-        <div className="text-sm lg:rotate-90">
+        <div className="text-sm hidden lg:block lg:rotate-90">
           <p>May,2020 -------- 2023</p>
         </div>
       </div>
 
       <div className="">
-        <p className="w-1/2 text-5xl leading-relaxed text-gray-600 mb-6">
+        <p className="w-2/3 md:w-1/2 text-3xl lg:text-5xl leading-relaxed text-gray-600 mb-6">
           The{" "}
           <span className="border-b-2 border-green-500 text-green-500">
             products are made
           </span>{" "}
           in Stockholm, Sweden
         </p>
-        <div className="grid place-items-center grid-cols-3 gap-10 text-justify text-lg text-gray-400">
-          <div className="flex flex-col gap-4 ">
+        <div className="md:grid place-items-center grid-cols-3 gap-10 text-justify text-lg text-gray-400">
+          <div className="flex flex-col gap-4">
             <p>
               The ambition is to make products with as small impact on the
               environment as possible, source materal and produce them locally.
@@ -83,7 +83,7 @@ const CallToAction = () => {
           </div>
           <div className="w-full  ">
             <img
-              className="h-[500px] rounded-[200px] w-full object-cover"
+              className="h-[200px] md:h-[500px] md:rounded-[200px] w-full object-cover"
               src="/assets/hero9.jpg"
               alt=""
             />
@@ -114,7 +114,7 @@ const CallToAction = () => {
             <source src="/assets/cta-video.mp4" />
           </video>
         </div>
-        <div>
+        <div className="">
           <h2 className="text-2xl">Poetic Brightness</h2>
           <p className="text-gray-400">
             Shop with us and let us plant a tree in the Amazon rainforest and a

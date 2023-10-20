@@ -38,18 +38,18 @@ const Home = () => {
     // </div>
     <div className="container mx-auto">
       <div className="my-auto mx-auto flex flex-col justify-center items-center pb-10">
-        <h1 className="text-9xl mt-6">Furni</h1>
+        <h1 className="text-6xl font-semibold md:text-9xl mt-6">Furni</h1>
         <div className="w-full flex flex-col justify-center items-center">
           <div className="">
-            <div className="flex justify-around gap-4 mt-12 mx-auto  ">
+            <div className="grid grid-cols-2 md:flex justify-around gap-4 mt-12 mx-auto  ">
               <img src="/assets/hero1.jpg" className="h-[200px] lg:h-[400px] " alt="" />
               <img src="/assets/hero2.jpg" className="h-[200px] lg:h-[400px] " alt="" />
               <img src="/assets/hero3.jpg" className="h-[200px] lg:h-[400px] " alt="" />
               <img src="/assets/hero4.jpg" className="h-[200px] lg:h-[400px] " alt="" />
             </div>
           </div>
-          <div className="mt-4">
-            <p className="text-center text-lg w-[40rem]">
+          <div className="mt-4 w-2/3 mx-auto">
+            <p className="text-center text-lg lg:w-[40rem]">
               Made with eco-conciousness today and for the future. The products
               are named after the parts used and mare made in Sweden using the
               best of materials.
